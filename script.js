@@ -27,9 +27,6 @@ darkmode.onclick = () => {
 };
 
 // Initialize EmailJS
-(function () {
-    emailjs.init("QviDrXrwOnzj3Lf4j");
-})();
 
 function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
