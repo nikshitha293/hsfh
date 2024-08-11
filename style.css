@@ -502,3 +502,37 @@ form textarea {
   max-height: 100px;
   border-radius: 50%; /* Creates a round shape */
 }
+
+#example-card {
+    width: 300px;
+    height: 200px; /* Adjust height as needed */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #fff; /* You can adjust this if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#example-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.example-content {
+    text-align: center;
+    padding: 16px;
+}
+
+.example-title {
+    margin: 0 0 8px;
+    font-size: 1.5em;
+    color: var(--text-color); /* Use the variable for consistency */
+}
+
+.example-description {
+    margin: 0;
+    color: var(--text-color); /* Use the variable for consistency */
+}
