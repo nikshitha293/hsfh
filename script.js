@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
     // Remove the 'active' class from the navbar on scroll 
     navbar.classList.remove('active');
 });
-
+ 
 menu.onclick = () => {
     navbar.classList.toggle('active');
 };
