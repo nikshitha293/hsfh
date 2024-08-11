@@ -5,7 +5,7 @@ let navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
     header.classList.toggle('shadow', window.scrollY > 0);
-    // Remove the 'active' class from the navbar on scroll
+    // Remove the 'active' class from the navbar on scroll 
     navbar.classList.remove('active');
 });
 
