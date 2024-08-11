@@ -503,18 +503,19 @@ form textarea {
   border-radius: 50%; /* Creates a round shape */
 }
 
-#example-card {
-    width: 300px;
-    height: 200px; /* Adjust height as needed */
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    background: #fff; /* You can adjust this if needed */
+.example-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 20px; /* Adjust space between cards if needed */
+    flex-wrap: wrap; /* Wrap to the next line on smaller screens */
 }
+
+.example-card {
+    flex: 1 1 30%; /* Adjust the width as needed; this makes each card take up around 30% of the container width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow to the card */
+    padding: 16px;
+    border-radius: 8px; /* Optional: Rounds the corners of the card */
+}
+
 
 #example-card:hover {
     transform: scale(1.05);
